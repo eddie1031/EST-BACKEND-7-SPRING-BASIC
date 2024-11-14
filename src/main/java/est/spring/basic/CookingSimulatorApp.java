@@ -9,9 +9,15 @@ public class CookingSimulatorApp {
 
     public static void main(String[] args) {
 
+//        AnnotationConfigApplicationContext context =
+//            new AnnotationConfigApplicationContext(
+//                CookingGameSimulatorConfiguration.class
+//            );
+
+        // 동일한 결과를 도출
         AnnotationConfigApplicationContext context =
             new AnnotationConfigApplicationContext(
-                CookingGameSimulatorConfiguration.class
+                CookingSimulatorScanConfig.class
             );
 
         List<String> ingredients = Arrays.asList("무", "소고기", "후추");

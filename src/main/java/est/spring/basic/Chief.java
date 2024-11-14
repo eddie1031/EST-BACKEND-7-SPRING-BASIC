@@ -1,7 +1,10 @@
 package est.spring.basic;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
+@Component
 public class Chief {
 
 //    private KoreanCuisineAbility ability = new KoreanCuisineAbility();
