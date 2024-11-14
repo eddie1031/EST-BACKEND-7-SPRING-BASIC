@@ -16,9 +16,17 @@ public class CookingSimulator {
         GameConfiguration configuration = new GameConfiguration();
 
         List<String> ingredients = Arrays.asList("김치", "대파", "마늘", "고춧가루");
-        Chief chief = configuration.chief();
 
-        chief.cook(ingredients);
+        Chief chief1 = configuration.chief();
+        Chief chief2 = configuration.chief();
+
+        chief1.cook(ingredients);
+        chief2.cook(ingredients);
+
+        KoreanCuisineAbility appliedCuisineAbility = configuration.koreanCuisineAbility();
+        int exp = appliedCuisineAbility.getExp();
+
+        System.out.println("exp = " + exp); // 0
 
     }
 
