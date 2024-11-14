@@ -2,7 +2,7 @@ package est.spring.basic;
 
 import java.util.List;
 
-public class KoreanCuisineAbility {
+public class KoreanCuisineAbility implements CuisineAbility{
 
     private int exp = 0;
 
@@ -10,6 +10,7 @@ public class KoreanCuisineAbility {
         exp++;
     }
 
+    @Override
     public void apply(List<String> ingredient) {
         this.increaseExp();
 
