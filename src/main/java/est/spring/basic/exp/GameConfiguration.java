@@ -1,4 +1,4 @@
-package est.spring.basic;
+package est.spring.basic.exp;
 
 public class GameConfiguration {
 
